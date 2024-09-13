@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --main-color:rgba(167, 167, 15, 0.498);
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+section{
+    padding: 4rem 0 2rem;
+}
+img {
+    width: 100%;
+}
+body{
+    color:var(--text-color)
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    margin-bottom: 0;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color)
+}
+.logo span{
+    color: var(--main-color)
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover,
+.navbar .active {
+    color:rgba(167, 167, 15, 0.498);
+    border-bottom: 3px solid;
+}
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+/* .search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+} */
+.home{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(./images/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+
+}
+.home-text {
+    padding-left: 130px;
+
+}
+.home-text span {
+    color: var(--main-color);
+}
+.home-text p {
+    font size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn {
+    padding: 10px 22px;
+    background: rgba(167, 167, 15, 0.498);
+    color: var(--bg-color);
+    font-weight: 400;
+}
+.btn:hover{
+    background:rgba(97, 97, 10, 0.498);
+}
+.home-text{
+    text-align: center;
+}
+.home-text span{
+    font-weight: 500;
+    color: rgba(167, 167, 15, 0.498);
+}
+.home-text p{
+    font-size: 0.983rem;
+    font-weight: 300;
+}
+.car-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.car-container .box {
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5 rem;
+    overflow: hidden;
+}
+.car-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.car-container .box img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.car-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--bg-color);
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+.car-container .box:hover h2{
+    background:rgba(167, 167, 15, 0.498);
+    color: var(--bg-color)
+}
+.registration-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="address"],
+.registration-form input[type="number"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.registration-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #45a054;
+}
+.login{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-position: center left;
+}
+.login input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.add-car{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.add-car input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.add-car input[type="submit"]:hover {
+    background-color: #45a054;
+}

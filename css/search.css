@@ -1,0 +1,50 @@
+/* CSS for the search box container and its contents */
+.search-box {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.search-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.search-box .form-group {
+  margin-bottom: 15px;
+}
+
+.search-box label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-box input[type='text'],
+.search-box input[type='location'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-box .search-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-box .search-button:hover {
+  background-color: #0056b3;
+}
